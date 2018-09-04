@@ -57,7 +57,7 @@ public class Main {
         aplle_box2.boxinfo();
         orange_box.boxinfo();
         System.out.println(aplle_box.compare(orange_box));
-        aplle_box.temp_name(aplle_box2);
+        aplle_box.temp_name(aplle_box2); //Пересыпаем фрукты
         aplle_box.boxinfo();
         aplle_box2.boxinfo();
 
