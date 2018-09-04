@@ -39,7 +39,7 @@ public class Main {
         Orange orng5 = new Orange("Orange", 0.50f);
 
 
-        aplle_box.addIt(apl1);
+        aplle_box.addIt(apl1); //Создание фруктов
         aplle_box.addIt(apl2);
         aplle_box.addIt(apl3);
         aplle_box.addIt(apl4);
