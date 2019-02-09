@@ -1,6 +1,6 @@
 package Lesson_4;
 
-public class first_task {
+public class First_task {
 
     static Object mon = new Object();
     static volatile char ch = 'A';

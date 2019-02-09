@@ -1,6 +1,6 @@
 package Lesson_4;
 
-public class second_task {
+public class Second_task {
 
     public static void main(String[] args) {
         get_ready(2000);
