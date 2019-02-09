@@ -9,12 +9,31 @@ public class third_task {
 
     public static void main(String[] args) {
 
-        Document doc1 = new Document(7, "Passport");
-        Document doc2 = new Document(15, "Diplom");
+        Document doc1 = new Document(8, "Passport");
+        Document doc2 = new Document(13, "Diplom");
 
         Mfu mfu = new Mfu();
-        mfu.print(doc1);
-        mfu.scan(doc2);
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                mfu.print(doc1);
+            }
+        }).start();
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                mfu.scan(doc2);
+            }
+        }).start();
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                mfu.scan(doc1);
+            }
+        }).start();
 
     }
 
